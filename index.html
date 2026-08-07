@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencatatan Tensi & BPM</title>
+    
+    <!-- Meta tag opsional untuk SEO/Tampilan saat di-share -->
+    <meta name="description" content="Aplikasi pencatatan Tensi dan Detak Jantung harian.">
+    <meta name="theme-color" content="#3b82f6">
+
+    <style>
+        /* Reset default browser margin/padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f3f4f6; /* Menyamakan dengan warna background aplikasi */
+            overflow: hidden; /* Mencegah munculnya double scrollbar */
+            font-family: sans-serif;
+        }
+
+        /* Styling iframe agar tampil penuh */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Menghilangkan garis tepi */
+            display: block;
+        }
+
+        /* Tampilan loading sederhana sebelum iframe selesai dimuat (opsional) */
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #6b7280;
+            z-index: -1; /* Berada di belakang iframe */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Teks loading yang akan tertutup otomatis saat iframe terbuka -->
+    <div id="loader">
+        <p>Memuat Aplikasi...</p>
+    </div>
+
+    <!-- Embed Link Google Apps Script -->
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbwtTfPhxT93Cs4hhyw2Adx6E8p20fXfqBgpsr598rdq5NN7g3HUINZ283GCVrVDtPMY/exec" 
+        title="Monitor Tensi & BPM"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
